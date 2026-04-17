@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ColorStack UMN — Ideathon</title>
+<meta name="description" content="ColorStack UMN Ideathon: A 3-Hour Sprint.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme--maroon">
+
+<!-- ════════════════════════════════════════ DECK ════════════════════════════════════════ -->
+<div class="deck" id="deck">
+
+  <!-- ── SLIDE 1: Intro & Welcome ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <img src="assets/microphone.svg" alt="" class="mic-accent" aria-hidden="true">
+    <div class="flex-col gap-lg" style="max-width: 80vw;">
+      <p class="t-mono anim" style="letter-spacing: 0.2em;">SPRING 2026</p>
+      <h1 class="t-display anim" style="font-size: max(28px, 3vw); letter-spacing: 0.08em;">COLORSTACK UMN</h1>
+      <div class="anim">
+        <span class="t-display text-yellow slide-title-xl" style="display: block;">Ideathon</span>
+      </div>
+      <div class="rule anim"></div>
+      <p class="t-serif anim" style="font-size: max(20px, 2vw); font-weight: 300;">A 3-Hour Sprint.</p>
+      <p class="t-mono-sm anim" style="opacity: 0.5; margin-top: auto; padding-top: 4vh;">APRIL 2026 &mdash; UNIVERSITY OF MINNESOTA</p>
+    </div>
+    <div class="qr-checkin anim">
+      <span class="t-mono-sm">CHECK IN</span>
+      <img src="assets/checkinqr.png" alt="Check-in QR code">
+    </div>
+  </section>
+
+  <!-- ── SLIDE 2: Timeline ── -->
+  <section class="slide slide--cream" data-theme="cream">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 72vw;">
+      <p class="t-mono anim mb-sm">SCHEDULE</p>
+      <h2 class="t-display slide-title-lg anim mb-lg" style="color: var(--maroon);">The Next 120 Minutes.</h2>
+      <div class="timeline anim">
+        <div class="timeline-item anim">
+          <div class="timeline-time">6:30 &ndash; 6:45</div>
+          <div class="timeline-label">What is ColorStack &amp; Ideathon</div>
+          <div class="timeline-desc">Introductions, check-in, overview</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-time">6:45 &ndash; 6:55</div>
+          <div class="timeline-label">Team Formation &amp; Final Questions</div>
+          <div class="timeline-desc">Find your people, ask questions</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-time">7:00</div>
+          <div class="timeline-label">Prompt Reveal &amp; Start</div>
+          <div class="timeline-desc">The challenge drops, build phase begins</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-time">8:00</div>
+          <div class="timeline-label">Done</div>
+          <div class="timeline-desc">Build phase ends</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-time">8:00 &ndash; 8:30</div>
+          <div class="timeline-label">Presentations, Food &amp; Voting</div>
+          <div class="timeline-desc">Pitches, eat, vote for winners</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-time">8:30</div>
+          <div class="timeline-label">Final Reveals</div>
+          <div class="timeline-desc">Winners announced</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 3: Rules & Prizes ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="ghost ghost--left">01</div>
+    <div class="split" style="width: 100%; align-items: start;">
+      <div class="flex-col gap-md">
+        <p class="t-mono anim">GUIDELINES</p>
+        <h2 class="t-display slide-title-lg anim">The Rules</h2>
+        <ul class="num-list anim" style="margin-top: max(12px, 1vw);">
+          <li>Teams of 4 &ndash; 5 people</li>
+          <li>All work done during the build phase</li>
+          <li>Any tools, languages, or frameworks allowed</li>
+          <li>AI tools are discouraged</li>
+          <li>Submit a slide deck or live demo</li>
+          <li>Judged on creativity, outside of the boxness &amp; presentation</li>
+        </ul>
+      </div>
+      <div class="flex-col gap-md anim" style="padding-top: max(8px, 0.5vw);">
+        <p class="t-mono">PRIZE POOL</p>
+        <div class="flex-col gap-sm" style="margin-top: max(8px, 0.5vw);">
+          <div>
+            <span class="t-display slide-hero-num text-yellow">$200</span>
+            <p class="t-mono-sm" style="opacity: 0.5; margin-top: 4px;">FIRST PLACE</p>
+          </div>
+          <div style="margin-top: max(12px, 1vw);">
+            <span class="t-display slide-hero-num text-yellow">$150</span>
+            <p class="t-mono-sm" style="opacity: 0.5; margin-top: 4px;">SECOND PLACE</p>
+          </div>
+          <div style="margin-top: max(12px, 1vw);">
+            <span class="t-display slide-hero-num text-yellow">$100</span>
+            <p class="t-mono-sm" style="opacity: 0.5; margin-top: 4px;">THIRD PLACE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 4: Rules & Regulations ── -->
+  <section class="slide slide--cream" data-theme="cream">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="ghost ghost--right" style="color: var(--maroon);">02</div>
+    <div class="flex-col gap-lg" style="max-width: 68vw;">
+      <p class="t-mono anim">CODE OF CONDUCT</p>
+      <h2 class="t-display slide-title-lg anim" style="color: var(--maroon);">Rules &amp; Regulations</h2>
+      <div class="split anim" style="margin-top: max(8px, 0.5vw); grid-template-columns: 1fr 1fr;">
+        <div class="flex-col gap-sm">
+          <p class="t-mono anim" style="font-weight: 600; font-size: max(11px, 0.7vw);">EXPECTATIONS</p>
+          <ul class="reg-list anim">
+            <li>Respect all participants, judges, and organizers</li>
+            <li>No pre-built projects or prior work allowed</li>
+            <li>All code and assets must be created during the event</li>
+            <li>Open-source libraries and APIs are permitted</li>
+          </ul>
+        </div>
+        <div class="flex-col gap-sm">
+          <p class="t-mono anim" style="font-weight: 600; font-size: max(11px, 0.7vw);">SUBMISSIONS</p>
+          <ul class="reg-list anim">
+            <li>Presentations must not exceed 5 minutes</li>
+            <li>All team members must contribute to the pitch</li>
+            <li>Judges&rsquo; decisions are final</li>
+            <li>Projects may be showcased by ColorStack UMN</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout anim" style="margin-top: max(8px, 0.5vw);">
+        <p class="t-serif" style="font-size: max(14px, 1vw); opacity: 0.85;">
+          Violation of these guidelines may result in disqualification. If you have questions, ask an organizer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 5: Team Formation ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 65vw;">
+      <p class="t-mono anim">TEAM UP</p>
+      <h2 class="t-display slide-title-lg anim">Find Your People.</h2>
+      <p class="t-serif anim" style="font-size: max(17px, 1.3vw); opacity: 0.8;">
+        Form teams of 3&ndash;5. Mix skills&mdash;designers, developers, storytellers.
+        If you came solo, Please go to advisor to help coordinate finding your team.
+      </p>
+      <div class="callout anim">
+        <p class="t-serif" style="font-weight: 600; margin-bottom: 6px;">Solo?</p>
+        <p class="t-serif" style="font-size: max(15px, 1.1vw); opacity: 0.85;">
+          Raise your hand. We&rsquo;ll match you with a team that needs your skills.
+          Everyone ships today.
+        </p>
+      </div>
+      <div class="anim" style="margin-top: max(12px, 1vw);">
+        <span class="pill pill--yellow">TIME: 15 MIN</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 6: Filler ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col" style="justify-content: center; height: 100%;">
+      <div class="anim">
+        <span class="t-display slide-filler-headline" style="display: inline;">BUILDING</span><span class="cursor"></span>
+      </div>
+      <div class="rule anim" style="margin-top: max(24px, 2vw);"></div>
+      <p class="t-mono anim" style="margin-top: max(16px, 1.2vw); opacity: 0.5;">COLORSTACK UMN &mdash; IDEATHON 2026</p>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 7: Prompt Reveal ── -->
+  <section class="slide slide--maroon" data-theme="maroon" id="promptSlide">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 85vw; width: 100%; align-items: center; text-align: center;">
+      <p class="t-mono anim" style="letter-spacing: 0.2em;">THE PROMPT</p>
+
+      <!-- Loading state -->
+      <div class="prompt-loader" id="promptLoader">
+        <div class="prompt-loader-bar"></div>
+        <p class="t-mono-sm" style="margin-top: max(16px, 1.2vw); opacity: 0.5;">DECRYPTING&hellip;</p>
+      </div>
+
+      <!-- Revealed prompt -->
+      <div class="prompt-reveal" id="promptReveal">
+        <h2 class="t-display prompt-headline">Chopped<br>to Unchopped</h2>
+        <div class="rule" style="margin: max(16px, 1.5vw) auto;"></div>
+        <div class="prompt-constraints">
+          <span class="pill pill--yellow">NO AI</span>
+          <span class="pill pill--yellow">NO PREVIOUS WORK</span>
+        </div>
+      </div>
+
+      <div class="anim" style="display: flex; align-items: center; gap: max(16px, 1.5vw); margin-top: max(16px, 1.5vw);">
+        <div class="rule"></div>
+        <span class="t-mono-sm" style="opacity: 0.5;">REVEALED LIVE &mdash; 0:30</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 8: GO + Follow Along ── -->
+  <section class="slide slide--cream" data-theme="cream">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col" style="justify-content: center; align-items: flex-start; height: 100%;">
+      <div class="anim">
+        <h2 class="t-display slide-go-headline" style="color: var(--maroon);">GO<span class="period">.</span></h2>
+      </div>
+      <div class="url-display anim" style="max-width: 65vw; margin-top: max(16px, 1.5vw);">
+        <!-- ═══ UPDATE THIS URL BEFORE THE EVENT ═══ -->
+        <p class="url-text">colorstack-umn-ideathon.vercel.app</p>
+      </div>
+      <div class="anim" style="display: flex; align-items: center; gap: max(16px, 1.5vw); margin-top: max(12px, 1vw);">
+        <div class="rule"></div>
+        <span class="t-mono-sm" style="opacity: 0.5;">NAVIGATE WITH ARROW KEYS OR SWIPE</span>
+      </div>
+      <p class="t-mono anim" style="position: absolute; bottom: max(24px, 3vh); left: 8vw; opacity: 0.5; letter-spacing: 0.18em;">BUILD PHASE BEGINS</p>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 9: Done & Presentation Time ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col" style="justify-content: center; align-items: flex-start; height: 100%;">
+      <div class="anim">
+        <h2 class="t-display slide-go-headline">DONE<span class="period">.</span></h2>
+      </div>
+      <p class="t-mono anim" style="margin-top: max(16px, 1.5vw); letter-spacing: 0.18em;">PRESENTATIONS &amp; FOOD</p>
+      <p class="t-serif anim" style="font-size: max(20px, 2vw); font-weight: 300; opacity: 0.8; margin-top: max(8px, 0.5vw);">Time to eat, time to pitch.</p>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 10: Grilling / Q&A ── -->
+  <section class="slide slide--cream" data-theme="cream">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 72vw;">
+      <p class="t-mono anim">PRESENTATIONS</p>
+      <h2 class="t-display slide-title-lg anim" style="color: var(--maroon);">The Grilling.</h2>
+      <p class="t-serif anim" style="font-size: max(16px, 1.2vw); opacity: 0.8; max-width: 50vw;">
+        Each team takes the stage. Impress us, then survive the questions.
+      </p>
+      <div class="flex-col anim" style="margin-top: max(8px, 0.5vw);">
+        <div class="timing-block">
+          <div>
+            <p class="t-mono" style="font-weight: 600;">PITCH</p>
+            <p class="t-serif" style="font-size: max(14px, 1vw); opacity: 0.7;">Present your solution</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: max(10px, 0.8vw);">
+            <span class="t-display" style="font-size: max(28px, 2.5vw); color: var(--yellow);">5:00</span>
+            <div class="timing-indicator"></div>
+          </div>
+        </div>
+        <div class="timing-block">
+          <div>
+            <p class="t-mono" style="font-weight: 600;">Q &amp; A</p>
+            <p class="t-serif" style="font-size: max(14px, 1vw); opacity: 0.7;">Judges ask, you defend</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: max(10px, 0.8vw);">
+            <span class="t-display" style="font-size: max(28px, 2.5vw); color: var(--yellow);">3:00</span>
+            <div class="timing-indicator"></div>
+          </div>
+        </div>
+        <div class="timing-block" style="border-style: dashed; opacity: 0.5;">
+          <div>
+            <p class="t-mono" style="font-weight: 600;">TRANSITION</p>
+            <p class="t-serif" style="font-size: max(14px, 1vw); opacity: 0.7;">Next team sets up</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: max(10px, 0.8vw);">
+            <span class="t-display" style="font-size: max(28px, 2.5vw);">2:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 11: Voting ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 85vw; width: 100%; align-items: center; text-align: center;">
+      <p class="t-mono anim" style="letter-spacing: 0.2em;">VOTE</p>
+      <h2 class="t-display slide-title-lg anim">Have Your Say.</h2>
+      <div class="qr-voting anim">
+        <img src="assets/ideathonvoting.png" alt="Voting QR code">
+      </div>
+      <p class="t-mono-sm anim" style="opacity: 0.7; letter-spacing: 0.14em;">SCAN TO VOTE FOR YOUR FAVORITE</p>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 12: Prizes Reveal ── -->
+  <section class="slide slide--cream" data-theme="cream">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 70vw;">
+      <p class="t-mono anim">RESULTS</p>
+      <h2 class="t-serif anim" style="font-size: max(32px, 4vw); font-style: italic; font-weight: 300; color: var(--maroon);">And the winners&hellip;</h2>
+      <div class="flex-col anim" style="margin-top: max(16px, 1.5vw);">
+        <!-- ═══ FILL IN WINNING TEAM NAMES DURING THE EVENT ═══ -->
+        <div class="prize-tier">
+          <span class="prize-rank">01</span>
+          <div>
+            <span class="prize-amount" style="color: var(--maroon);">$200</span>
+            <p class="prize-label">FIRST PLACE &mdash; _______________</p>
+          </div>
+        </div>
+        <div class="prize-tier anim">
+          <span class="prize-rank">02</span>
+          <div>
+            <span class="prize-amount" style="color: var(--maroon);">$150</span>
+            <p class="prize-label">SECOND PLACE &mdash; _______________</p>
+          </div>
+        </div>
+        <div class="prize-tier anim">
+          <span class="prize-rank">03</span>
+          <div>
+            <span class="prize-amount" style="color: var(--maroon);">$100</span>
+            <p class="prize-label">THIRD PLACE &mdash; _______________</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SLIDE 13: Closing ── -->
+  <section class="slide slide--maroon" data-theme="maroon">
+    <div class="slide-logo-wrap"><img src="assets/cstkgopher.png" alt="" class="slide-logo" aria-hidden="true"></div>
+    <div class="flex-col gap-lg" style="max-width: 80vw;">
+      <p class="t-mono anim" style="letter-spacing: 0.2em;">COLORSTACK UMN</p>
+      <h2 class="t-serif anim" style="font-size: max(32px, 4.5vw); font-style: italic; font-weight: 300;">Until next time.</h2>
+      <div class="rule anim"></div>
+      <p class="t-serif anim" style="font-size: max(16px, 1.2vw); opacity: 0.7; max-width: 45vw;">
+        Thank you to every team, mentor, and judge who made this possible.
+        Keep building.
+      </p>
+      <div class="anim" style="margin-top: auto; padding-top: 4vh;">
+        <p class="t-mono-sm" style="opacity: 0.4;">IDEATHON 2026 &mdash; UNIVERSITY OF MINNESOTA</p>
+        <p class="t-mono-sm" style="opacity: 0.3; margin-top: 4px;">COLORSTACK.ORG</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- ════════════════════════════════════════ /DECK ═══════════════════════════════════════ -->
+
+<!-- Dot Nav -->
+<nav class="dot-nav" id="dotNav" aria-label="Slide navigation"></nav>
+
+<!-- Page Counter -->
+<div class="page-counter" id="pageCounter">01 / 13</div>
+
+<script src="script.js"></script>
+</body>
+</html>
