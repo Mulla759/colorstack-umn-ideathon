@@ -1,4 +1,46 @@
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+
+# Sensitive / unused assets
+assets/extended.svg
+assets/voting1.png
+assets/microphone.svg
+assets/findy.JPG
+
+# AI tool configs
+.claude/
+.adal/
+.agents/
+.augment/
+.codebuddy/
+.commandcode/
+.continue/
+.cortex/
+.crush/
+.factory/
+.goose/
+.iflow/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.vibe/
+.windsurf/
+.zencoder/
+
+# Skills (managed by tooling)
 skills/
 skills-lock.json
-.DS_Store
-node_modules/
