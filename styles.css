@@ -62,10 +62,9 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   position: absolute;
   top: max(20px, 2.5vh);
   right: max(20px, 2.5vw);
-  width: max(40px, 3.2vw);
-  padding: 6px;
-  background: rgba(255, 251, 240, 0.9);
-  border-radius: 4px;
+  width: max(48px, 3.8vw);
+  padding: 0;
+  background: none;
   z-index: 1;
   pointer-events: none;
   user-select: none;
@@ -372,9 +371,9 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   margin-top: max(16px, 1.5vw);
 }
 .winners-branding-logo {
-  width: max(24px, 2vw);
+  width: max(32px, 2.6vw);
   height: auto;
-  border-radius: 3px;
+  mix-blend-mode: multiply;
 }
 .winners-crown {
   font-size: max(18px, 1.6vw);
@@ -839,7 +838,7 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   .timeline-item::before { left: -22px; }
   .ghost { font-size: 35vw; }
   .mic-accent { width: max(100px, 20vw); right: 4vw; bottom: 12vh; opacity: 0.07; }
-  .slide-logo-wrap { width: max(32px, 5vw); }
+  .slide-logo-wrap { width: max(36px, 6vw); }
   .qr-checkin img { width: 10vh; height: 10vh; }
   .qr-voting img { height: 25vh; }
   .url-text { font-size: max(16px, 3.5vw); }
