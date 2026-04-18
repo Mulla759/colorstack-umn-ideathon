@@ -12,7 +12,7 @@
   --font-serif: 'Source Serif 4', 'Georgia', serif;
   --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
   --slide-transition: 720ms cubic-bezier(0.22, 1, 0.36, 1);
-  --total-slides: 13;
+  --total-slides: 14;
 }
 
 /* ── Reset ── */
@@ -562,6 +562,56 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   border-radius: 8px;
 }
 
+/* ── Component: Team Grid (Meet the Teams) ── */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: max(12px, 1vw);
+  width: 100%;
+  max-width: 64vw;
+  margin: 0 auto;
+}
+.team-item {
+  padding: max(14px, 1.2vw) max(20px, 1.6vw);
+  border-radius: 6px;
+  font-family: var(--font-serif);
+  font-size: max(16px, 1.2vw);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.slide--active .team-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+.team-item:nth-child(4n+1),
+.team-item:nth-child(4n) {
+  background: rgba(255, 251, 240, 0.1);
+}
+.team-item em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* ── Component: Mic Accent Wrap (Voting) ── */
+.mic-accent-wrap {
+  position: absolute;
+  right: 4vw;
+  bottom: 6vh;
+  background: rgba(255, 251, 240, 0.08);
+  border-radius: 12px;
+  padding: max(16px, 1.5vw);
+  pointer-events: none;
+  user-select: none;
+}
+.mic-accent-wrap .mic-accent {
+  position: static;
+  width: max(80px, 8vw);
+  mix-blend-mode: normal;
+  filter: brightness(0) invert(1);
+  opacity: 0.3;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .slide { padding: 6vh 6vw 10vh; }
@@ -583,4 +633,7 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   .qr-checkin img { width: 10vh; height: 10vh; }
   .qr-voting img { height: 25vh; }
   .url-text { font-size: max(16px, 3.5vw); }
+  .team-grid { grid-template-columns: 1fr; max-width: 90vw; }
+  .mic-accent-wrap { right: 3vw; bottom: 4vh; padding: max(12px, 1vw); }
+  .mic-accent-wrap .mic-accent { width: max(60px, 12vw); }
 }

@@ -8,7 +8,7 @@
   /* ── State ── */
   var state = {
     current: 0,
-    total: 13,
+    total: 14,
     isAnimating: false,
     promptRevealed: false
   };
@@ -23,14 +23,13 @@
   var promptSlide = document.getElementById('promptSlide');
 
   /* ── Themes per slide ──
-     M, C, M, C, M, M, M, C, M, C, M, C, M
-     Slides 5-6-7 (Team Formation + Building + Prompt) are triple maroon
-     Slide 8 (GO) is cream, slide 9 (Done) is maroon */
+     M, C, M, C, M, M, M, C, M, M, C, M, C, M
+     Slides 5-6-7 triple maroon, slides 9-10 double maroon */
   var themes = [
     'maroon', 'cream', 'maroon', 'cream',
     'maroon', 'maroon', 'maroon',
-    'cream', 'maroon', 'cream',
-    'maroon', 'cream', 'maroon'
+    'cream', 'maroon', 'maroon',
+    'cream', 'maroon', 'cream', 'maroon'
   ];
 
   /* Sync total from actual DOM */
