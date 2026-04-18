@@ -390,12 +390,12 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   gap: max(16px, 1.4vw);
   padding: max(14px, 1.2vw) max(18px, 1.5vw);
   border: 1px solid rgba(255, 251, 240, 0.12);
-  border-radius: 8px;
+  border-radius: 3px;
 }
 .winner-entry-img {
-  width: max(64px, 5vw);
-  height: max(64px, 5vw);
-  border-radius: 8px;
+  width: max(90px, 7vw);
+  height: max(90px, 7vw);
+  border-radius: 3px;
   overflow: hidden;
   flex-shrink: 0;
   border: 2px solid rgba(255, 251, 240, 0.15);
@@ -421,6 +421,57 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   font-size: max(20px, 1.8vw);
   color: var(--cream);
   opacity: 0.15;
+}
+
+/* ── Lightbox ── */
+.winner-entry-img[data-lightbox] { cursor: pointer; }
+.winner-entry-img[data-lightbox]:hover { opacity: 0.85; transition: opacity 0.2s; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 5, 5, 0.92);
+  cursor: pointer;
+}
+.lightbox-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: max(16px, 1.2vw);
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.lightbox.active .lightbox-content {
+  transform: scale(1);
+}
+.lightbox-img {
+  max-width: min(85vw, 720px);
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 251, 240, 0.15);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+}
+.lightbox-caption {
+  color: var(--cream);
+  opacity: 0.5;
+  letter-spacing: 0.14em;
 }
 
 /* ── Component: Editorial Frame ── */
@@ -807,5 +858,5 @@ body.theme--cream  { background: var(--cream);  color: var(--maroon); }
   .mic-accent-wrap { right: 3vw; bottom: 4vh; padding: max(12px, 1vw); }
   .mic-accent-wrap .mic-accent { width: max(60px, 12vw); }
   .winner-entry { padding: max(10px, 1vw) max(12px, 1vw); gap: max(12px, 1vw); }
-  .winner-entry-img { width: max(48px, 12vw); height: max(48px, 12vw); }
+  .winner-entry-img { width: max(64px, 16vw); height: max(64px, 16vw); }
 }

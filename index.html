@@ -397,7 +397,7 @@
       </div>
       <div class="flex-col gap-md anim">
         <div class="winner-entry anim">
-          <div class="winner-entry-img winner-entry-img--1st">
+          <div class="winner-entry-img winner-entry-img--1st" data-lightbox="assets/worldtube.JPG">
             <img src="assets/worldtube.JPG" alt="WorldTube">
           </div>
           <div class="flex-col">
@@ -406,7 +406,7 @@
           </div>
         </div>
         <div class="winner-entry anim">
-          <div class="winner-entry-img">
+          <div class="winner-entry-img" data-lightbox="assets/findmymacalin.JPG">
             <img src="assets/findmymacalin.JPG" alt="Find My Ma'alin">
           </div>
           <div class="flex-col">
@@ -415,7 +415,7 @@
           </div>
         </div>
         <div class="winner-entry anim">
-          <div class="winner-entry-img">
+          <div class="winner-entry-img" data-lightbox="">
             <div class="winner-entry-placeholder">03</div>
           </div>
           <div class="flex-col">
@@ -435,6 +435,15 @@
 
 <!-- Page Counter -->
 <div class="page-counter" id="pageCounter">01 / 14</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-backdrop"></div>
+  <div class="lightbox-content">
+    <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    <p class="lightbox-caption t-mono-sm" id="lightboxCaption"></p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
