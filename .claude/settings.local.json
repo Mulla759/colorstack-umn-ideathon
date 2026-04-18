@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills add:*)",
+      "Bash(open:*)",
+      "mcp__plugin_figma-friend_chrome-devtools__list_pages",
+      "mcp__plugin_figma-friend_chrome-devtools__navigate_page",
+      "mcp__plugin_figma-friend_chrome-devtools__take_screenshot",
+      "mcp__plugin_figma-friend_chrome-devtools__evaluate_script",
+      "mcp__plugin_figma-friend_chrome-devtools__press_key",
+      "mcp__plugin_figma-friend_chrome-devtools__take_snapshot"
+    ]
+  }
+}
